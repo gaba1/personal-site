@@ -1,0 +1,288 @@
+/*
+font-family: 'Courier Prime', monospace;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+.container {
+  padding: 0 30px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px; }
+
+.logo {
+  margin: 0 2rem; }
+
+img {
+  display: block;
+  width: 100%; }
+
+ul {
+  list-style: none; }
+
+h2 {
+  color: #2f3640;
+  font-size: 2rem;
+  padding: 2rem; }
+
+a {
+  color: #f5f6fa;
+  text-decoration: none; }
+
+p {
+  line-height: 30px; }
+
+.flex {
+  display: flex; }
+
+.grid {
+  display: grid; }
+
+.grid-2-1 {
+  grid-template-columns: 2fr 1fr; }
+
+.grid-c-2 {
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr); }
+
+.grid-c-3 {
+  grid-template-columns: repeat(3, 1fr); }
+
+.column {
+  margin: auto 0; }
+
+.divider {
+  content: "";
+  text-align: center;
+  height: 2px;
+  margin: 3.5rem;
+  opacity: .3;
+  background-color: #2f3640; }
+
+.btn {
+  color: #f5f6fa;
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #fbc531; }
+  .btn:hover {
+    transition: all .2s ease-in-out;
+    background-color: #fbc531;
+    color: #2f3640; }
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  z-index: 1000;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 auto;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.661502) 0%, rgba(46, 46, 46, 0.403799) 48%, rgba(255, 255, 255, 0) 89%); }
+  .navbar ul {
+    display: flex; }
+    .navbar ul li {
+      margin-right: 1.5rem; }
+      .navbar ul li a {
+        font-size: 0.8rem; }
+  .navbar .logo > a > img {
+    width: 60px; }
+  .navbar .menu {
+    margin: auto auto; }
+    .navbar .menu:hover ul > li > a {
+      opacity: 0.6; }
+    .navbar .menu ul > li > a:hover {
+      transition: all 0.2s ease-in-out;
+      color: #fbc531;
+      opacity: 1; }
+  .navbar .contact {
+    margin-right: 2rem;
+    text-align: right; }
+    .navbar .contact a {
+      color: #fbc531; }
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5; }
+  header .home-welcome {
+    line-height: 75px;
+    height: 100vh;
+    align-content: center; }
+    header .home-welcome .read-more {
+      margin: auto auto; }
+    header .home-welcome div {
+      margin: 2rem; }
+    header .home-welcome .welcome {
+      font-size: 3rem;
+      letter-spacing: 10px;
+      color: #f5f6fa;
+      text-transform: capitalize;
+      color: #f5f6fa; }
+
+.header-snippets::after {
+  background: url("../img/code.jpg") no-repeat top center/cover;
+  opacity: 0.2 !important; }
+
+.header-home::after {
+  background: url("../img/home.jpg") no-repeat top center/cover; }
+
+.header-about::after {
+  background: url("../img/computer.jpg") no-repeat top center/cover; }
+
+.header-skills::after {
+  background: url("../img/work.jpg") no-repeat top center/cover; }
+
+.bg-overlay {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  height: 100%;
+  width: 100%; }
+
+#home-a {
+  margin: auto auto;
+  height: 100vh; }
+  #home-a .home-a-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative; }
+    #home-a .home-a-container div {
+      margin: auto; }
+
+.me-div {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: red;
+  overflow: hidden; }
+
+.profile-image {
+  display: block;
+  transition: all .3s ease-in-out; }
+
+.profile-image:hover {
+  transform: scale(1.1); }
+
+#about {
+  width: 100%; }
+
+.about-1,
+.about-2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8rem;
+  padding: 3rem; }
+  .about-1 div,
+  .about-2 div {
+    margin: 0 auto;
+    text-align: center; }
+
+.about-1 div,
+.about-2 div {
+  margin: auto 0; }
+
+.vt-box {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .vt-box img {
+    width: 100%;
+    height: 100%;
+    display: block; }
+  .vt-box .vt-1-h,
+  .vt-box .vt-2-h {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease-in-out; }
+  .vt-box .vt-1-h {
+    background: url("../img/kia_stinger_original.jpg") no-repeat center center/cover; }
+  .vt-box .vt-2-h {
+    background: url("../img/eclipse.jpg") no-repeat center center/cover; }
+  .vt-box .vt-1-h:hover,
+  .vt-box .vt-2-h:hover {
+    opacity: 0;
+    z-index: 1000; }
+
+#skills {
+  margin: 4rem 3rem; }
+  #skills section {
+    grid-template-columns: 4fr 6fr; }
+    #skills section .skills-list {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between; }
+      #skills section .skills-list h3 {
+        margin: 2.5rem 0 2rem 0; }
+      #skills section .skills-list ul > li {
+        font-size: 1.3rem;
+        list-style: initial;
+        line-height: 50px; }
+    #skills section .plans {
+      font-size: 1.3rem;
+      line-height: 2.5rem;
+      margin: 4rem; }
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  height: 300px;
+  background-color: #2d3436; }
+  footer p {
+    font-size: 0.7rem;
+    color: #636e72;
+    letter-spacing: 4px; }
+  footer .container {
+    text-align: center; }
+    footer .container .section {
+      padding: 1rem 0; }
+    footer .container .footer-logo {
+      margin: 0 auto;
+      width: 100px; }
+    footer .container .policy {
+      display: flex;
+      justify-content: center; }
+      footer .container .policy li {
+        padding: 0 3rem; }
+        footer .container .policy li a {
+          font-size: 0.8rem;
+          color: #fbc531; }
+          footer .container .policy li a:hover {
+            color: #e1b12c; }
+    footer .container .contact-links {
+      justify-content: center; }
+      footer .container .contact-links:hover li > a {
+        opacity: 0.6; }
+      footer .container .contact-links li {
+        padding: 0 0.3rem; }
+        footer .container .contact-links li a {
+          font-size: 1.2rem; }
+        footer .container .contact-links li a:hover {
+          color: #f5f6fa;
+          opacity: 1; }
