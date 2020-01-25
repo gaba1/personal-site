@@ -16,10 +16,12 @@
   text-transform: uppercase;
   font-weight: 600;
   margin: 0 auto;
-  background: linear-gradient(180deg,
-      rgba(0, 0, 0, 0.6615021008403361) 0%,
-      rgba(46, 46, 46, 0.40379901960784315) 48%,
-      rgba(255, 255, 255, 0) 89%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.6615021008403361) 0%,
+    rgba(46, 46, 46, 0.40379901960784315) 48%,
+    rgba(255, 255, 255, 0) 89%
+  );
 
   ul {
     display: flex;
@@ -33,7 +35,7 @@
     }
   }
 
-  .logo>a>img {
+  .logo > a > img {
     width: 60px;
     // color: red;
   }
@@ -41,11 +43,11 @@
   .menu {
     margin: auto auto;
 
-    &:hover ul>li>a {
+    &:hover ul > li > a {
       opacity: 0.6;
     }
 
-    ul>li>a:hover {
+    ul > li > a:hover {
       transition: all 0.2s ease-in-out;
       color: $secondary-text;
       opacity: 1;
@@ -157,7 +159,7 @@ header {
 
 .profile-image {
   display: block;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .profile-image:hover {
@@ -167,6 +169,9 @@ header {
 //Section About
 #about {
   width: 100%;
+  p {
+    font-size: 1.2rem;
+  }
 }
 
 .about-1,
@@ -174,16 +179,38 @@ header {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 8rem;
   padding: 3rem;
-
   div {
-    margin: 0 auto;
+    margin: auto auto;
     text-align: center;
   }
 }
+.about-3 {
+  grid-template-rows: 1fr 2fr;
+  grid-gap: 1rem;
+  div {
+    margin: auto auto;
+    text-align: center;
+  }
+  .namecard-box {
+    display: flex;
+    img {
+      height: 40%;
+      width: 40%;
+      margin: 0 auto;
+      padding: 3rem !important;
+    }
+  }
+}
 
-.about-1 div,
-.about-2 div {
-  margin: auto 0;
+.about-4 {
+  text-align: center;
+  padding: 3rem;
+  h2 {
+    padding: 0 0 2rem 0;
+  }
+  p {
+    line-height: 2.5rem;
+  }
 }
 
 .vt-box {
@@ -195,12 +222,9 @@ header {
     width: 100%;
     height: 100%;
     display: block;
-    // z-index: 1000;
   }
 
-  .vt-1-h,
-  .vt-2-h {
-    // display: none;
+  .vt-1-h {
     content: "";
     position: absolute;
     top: 0;
@@ -211,17 +235,27 @@ header {
   }
 
   .vt-1-h {
-    background: url("../img/kia_stinger_original.jpg") no-repeat center center / cover;
+    background: url("../img/kia_stinger_original.jpg") no-repeat center center /
+      cover;
   }
 
-  .vt-2-h {
-    background: url("../img/eclipse.jpg") no-repeat center center / cover;
-  }
-
-  .vt-1-h:hover,
-  .vt-2-h:hover {
+  .vt-1-h:hover {
     opacity: 0;
     z-index: 1000;
+  }
+}
+
+// Snippets
+.snippets-1 {
+  height: 100vh;
+  width: auto;
+  text-align: center;
+  h1 {
+    padding: 5rem;
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2rem;
   }
 }
 
@@ -242,7 +276,7 @@ header {
         margin: 2.5rem 0 2rem 0;
       }
 
-      ul>li {
+      ul > li {
         font-size: 1.3rem;
         list-style: initial;
         line-height: 50px;
@@ -304,7 +338,7 @@ footer {
     .contact-links {
       justify-content: center;
 
-      &:hover li>a {
+      &:hover li > a {
         opacity: 0.6;
       }
 

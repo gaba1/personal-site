@@ -182,13 +182,15 @@ header {
 
 .profile-image {
   display: block;
-  transition: all .3s ease-in-out; }
+  transition: all 0.3s ease-in-out; }
 
 .profile-image:hover {
   transform: scale(1.1); }
 
 #about {
   width: 100%; }
+  #about p {
+    font-size: 1.2rem; }
 
 .about-1,
 .about-2 {
@@ -197,12 +199,30 @@ header {
   padding: 3rem; }
   .about-1 div,
   .about-2 div {
-    margin: 0 auto;
+    margin: auto auto;
     text-align: center; }
 
-.about-1 div,
-.about-2 div {
-  margin: auto 0; }
+.about-3 {
+  grid-template-rows: 1fr 2fr;
+  grid-gap: 1rem; }
+  .about-3 div {
+    margin: auto auto;
+    text-align: center; }
+  .about-3 .namecard-box {
+    display: flex; }
+    .about-3 .namecard-box img {
+      height: 40%;
+      width: 40%;
+      margin: 0 auto;
+      padding: 3rem !important; }
+
+.about-4 {
+  text-align: center;
+  padding: 3rem; }
+  .about-4 h2 {
+    padding: 0 0 2rem 0; }
+  .about-4 p {
+    line-height: 2.5rem; }
 
 .vt-box {
   position: relative;
@@ -212,8 +232,7 @@ header {
     width: 100%;
     height: 100%;
     display: block; }
-  .vt-box .vt-1-h,
-  .vt-box .vt-2-h {
+  .vt-box .vt-1-h {
     content: "";
     position: absolute;
     top: 0;
@@ -223,12 +242,19 @@ header {
     transition: all 0.2s ease-in-out; }
   .vt-box .vt-1-h {
     background: url("../img/kia_stinger_original.jpg") no-repeat center center/cover; }
-  .vt-box .vt-2-h {
-    background: url("../img/eclipse.jpg") no-repeat center center/cover; }
-  .vt-box .vt-1-h:hover,
-  .vt-box .vt-2-h:hover {
+  .vt-box .vt-1-h:hover {
     opacity: 0;
     z-index: 1000; }
+
+.snippets-1 {
+  height: 100vh;
+  width: auto;
+  text-align: center; }
+  .snippets-1 h1 {
+    padding: 5rem;
+    font-size: 3rem; }
+  .snippets-1 p {
+    font-size: 2rem; }
 
 #skills {
   margin: 4rem 3rem; }

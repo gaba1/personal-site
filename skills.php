@@ -58,7 +58,7 @@
     </div>
     <div class="plans">
      <p>Let me talk about my plans, what I would like to learn furthermore.</p>
-     <p>First of all, as I want to become a Frontend developer, I would like to improve my Frontend skills to a higher level. And besides, I learn some Backend techniques for that case to have an opportunity to become a Full Stack developer later</p>
+     <p>First of all, as I want to become a Frontend developer, I would like to improve my Frontend skills to a higher level. And besides, I learn some Backend techniques for that case to have an opportunity to become a Full Stack developer later.</p>
     </div>
   </section>
 </div>

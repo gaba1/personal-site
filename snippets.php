@@ -16,8 +16,14 @@
 </div>
 <div class="bg-overlay"></div>
 
+
 </header>
   
+<section class="snippets-1">
+  <h1>This content is under construction</h1>
+  <p>In this section I am going to represent some of my skills</p>
+</section>
+
 <?php include "inc/footer.php"; ?>
 </body>
 <script>

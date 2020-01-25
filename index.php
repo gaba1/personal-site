@@ -23,7 +23,7 @@
   <div class="home-a-container">
     <div>
       <h2>Before anything else...</h2>
-      <p>Here I am. And that's all for this content</p>
+      <p>Here I am. And that's all for this content.</p>
     </div>
     <div>
       <div class="me-div">
